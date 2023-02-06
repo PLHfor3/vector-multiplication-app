@@ -16,6 +16,11 @@
 		58A77281298E44A8009E9975 /* andrew_mac_vectors_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A77280298E44A8009E9975 /* andrew_mac_vectors_appTests.swift */; };
 		58A7728B298E44A8009E9975 /* andrew_mac_vectors_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7728A298E44A8009E9975 /* andrew_mac_vectors_appUITests.swift */; };
 		58A7728D298E44A8009E9975 /* andrew_mac_vectors_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7728C298E44A8009E9975 /* andrew_mac_vectors_appUITestsLaunchTests.swift */; };
+		58A7729A298E45BA009E9975 /* DotProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A77299298E45BA009E9975 /* DotProduct.swift */; };
+		58A7729C298E45D0009E9975 /* CrossProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7729B298E45D0009E9975 /* CrossProduct.swift */; };
+		58A7729E298E4683009E9975 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7729D298E4683009E9975 /* Vector.swift */; };
+		58A772A0298F090F009E9975 /* DotProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7729F298F090F009E9975 /* DotProductController.swift */; };
+		58A772A2298F0E39009E9975 /* CrossProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A772A1298F0E39009E9975 /* CrossProductController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		58A77286298E44A8009E9975 /* andrew mac vectors appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "andrew mac vectors appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58A7728A298E44A8009E9975 /* andrew_mac_vectors_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = andrew_mac_vectors_appUITests.swift; sourceTree = "<group>"; };
 		58A7728C298E44A8009E9975 /* andrew_mac_vectors_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = andrew_mac_vectors_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		58A77299298E45BA009E9975 /* DotProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProduct.swift; sourceTree = "<group>"; };
+		58A7729B298E45D0009E9975 /* CrossProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossProduct.swift; sourceTree = "<group>"; };
+		58A7729D298E4683009E9975 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		58A7729F298F090F009E9975 /* DotProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProductController.swift; sourceTree = "<group>"; };
+		58A772A1298F0E39009E9975 /* CrossProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossProductController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,11 @@
 				58A77272298E44A8009E9975 /* Assets.xcassets */,
 				58A77274298E44A8009E9975 /* LaunchScreen.storyboard */,
 				58A77277298E44A8009E9975 /* Info.plist */,
+				58A77299298E45BA009E9975 /* DotProduct.swift */,
+				58A7729B298E45D0009E9975 /* CrossProduct.swift */,
+				58A7729D298E4683009E9975 /* Vector.swift */,
+				58A7729F298F090F009E9975 /* DotProductController.swift */,
+				58A772A1298F0E39009E9975 /* CrossProductController.swift */,
 			);
 			path = "andrew mac vectors app";
 			sourceTree = "<group>";
@@ -259,8 +274,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				58A7726E298E44A7009E9975 /* ViewController.swift in Sources */,
+				58A772A0298F090F009E9975 /* DotProductController.swift in Sources */,
 				58A7726A298E44A7009E9975 /* AppDelegate.swift in Sources */,
 				58A7726C298E44A7009E9975 /* SceneDelegate.swift in Sources */,
+				58A7729A298E45BA009E9975 /* DotProduct.swift in Sources */,
+				58A7729E298E4683009E9975 /* Vector.swift in Sources */,
+				58A772A2298F0E39009E9975 /* CrossProductController.swift in Sources */,
+				58A7729C298E45D0009E9975 /* CrossProduct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
