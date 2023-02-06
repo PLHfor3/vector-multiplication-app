@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A94-Ve-i75" userLabel="Dot Product View">
-                                <rect key="frame" x="15" y="217" width="360" height="601"/>
+                                <rect key="frame" x="14" y="216" width="361" height="601"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="5zL-DB-dBf" kind="embed" identifier="DotProduct" id="iNw-nd-XaZ"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Mb-Ps-qsq" userLabel="Cross Product View">
-                                <rect key="frame" x="16" y="217" width="361" height="601"/>
+                                <rect key="frame" x="15" y="216" width="362" height="601"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="X0P-0k-uME" kind="embed" identifier="CrossProduct" id="ACK-Di-GFX"/>
@@ -80,7 +80,7 @@
             <objects>
                 <viewController storyboardIdentifier="DotProductController" id="5zL-DB-dBf" customClass="DotProductController" customModule="andrew_mac_vectors_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="60U-iQ-IQh">
-                        <rect key="frame" x="0.0" y="0.0" width="360" height="601"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="601"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="u=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74u-jq-4Pz">
@@ -176,10 +176,9 @@
         <!--Cross Product Controller-->
         <scene sceneID="uTY-9h-f6M">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7bc-kb-Yi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="CrossProductController" id="X0P-0k-uME" customClass="CrossProductController" customModule="andrew_mac_vectors_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P6z-W8-mmp">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="601"/>
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="601"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="u=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXH-a8-PIZ">
@@ -286,6 +285,7 @@
                         <outlet property="resultLabel" destination="uuB-dq-Lb8" id="ryv-gk-38t"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bc-kb-Yi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-533.58778625954199" y="122.88732394366198"/>
         </scene>

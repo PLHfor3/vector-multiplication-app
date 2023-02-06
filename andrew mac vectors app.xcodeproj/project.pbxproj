@@ -20,7 +20,7 @@
 		58A7729C298E45D0009E9975 /* CrossProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7729B298E45D0009E9975 /* CrossProduct.swift */; };
 		58A7729E298E4683009E9975 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7729D298E4683009E9975 /* Vector.swift */; };
 		58A772A0298F090F009E9975 /* DotProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7729F298F090F009E9975 /* DotProductController.swift */; };
-		58A772A2298F0E39009E9975 /* CrossProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A772A1298F0E39009E9975 /* CrossProductController.swift */; };
+		58A772A42990A6E4009E9975 /* CrossProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A772A32990A6E4009E9975 /* CrossProductController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		58A7729B298E45D0009E9975 /* CrossProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossProduct.swift; sourceTree = "<group>"; };
 		58A7729D298E4683009E9975 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		58A7729F298F090F009E9975 /* DotProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProductController.swift; sourceTree = "<group>"; };
-		58A772A1298F0E39009E9975 /* CrossProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossProductController.swift; sourceTree = "<group>"; };
+		58A772A32990A6E4009E9975 /* CrossProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossProductController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 				58A7729B298E45D0009E9975 /* CrossProduct.swift */,
 				58A7729D298E4683009E9975 /* Vector.swift */,
 				58A7729F298F090F009E9975 /* DotProductController.swift */,
-				58A772A1298F0E39009E9975 /* CrossProductController.swift */,
+				58A772A32990A6E4009E9975 /* CrossProductController.swift */,
 			);
 			path = "andrew mac vectors app";
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				58A7726C298E44A7009E9975 /* SceneDelegate.swift in Sources */,
 				58A7729A298E45BA009E9975 /* DotProduct.swift in Sources */,
 				58A7729E298E4683009E9975 /* Vector.swift in Sources */,
-				58A772A2298F0E39009E9975 /* CrossProductController.swift in Sources */,
+				58A772A42990A6E4009E9975 /* CrossProductController.swift in Sources */,
 				58A7729C298E45D0009E9975 /* CrossProduct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
