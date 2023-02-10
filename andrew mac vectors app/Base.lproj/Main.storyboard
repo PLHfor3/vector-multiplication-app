@@ -49,9 +49,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KvH-uK-IhE">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="KvH-uK-IhE">
                                 <rect key="frame" x="33" y="91" width="174" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="getSliderValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="kd6-6F-4Ea"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sig Figs: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTS-Rp-azS">
                                 <rect key="frame" x="238" y="93" width="111" height="25"/>
@@ -67,7 +70,8 @@
                     </view>
                     <connections>
                         <outlet property="crossProductView" destination="4Mb-Ps-qsq" id="QXn-oj-Jh5"/>
-                        <outlet property="dotProductView" destination="A94-Ve-i75" id="VK6-7g-FoI"/>
+                        <outlet property="dotProductView" destination="A94-Ve-i75" id="vBS-53-the"/>
+                        <outlet property="sigFigSlider" destination="KvH-uK-IhE" id="rgD-Cb-gxs"/>
                         <outlet property="sigFigsLabel" destination="MTS-Rp-azS" id="hEq-xo-5qb"/>
                     </connections>
                 </viewController>
@@ -182,6 +186,7 @@
                         <viewLayoutGuide key="safeArea" id="5Kb-Xq-hhK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="P1a-ep-azB"/>
                     <value key="contentSizeForViewInPopover" type="size" width="360" height="601"/>
                     <connections>
                         <outlet property="resultLabel" destination="ZkO-OW-Tvp" id="7gv-Fw-dpm"/>
@@ -193,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXx-LO-5Vh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-241.22137404580153" y="-418.66197183098592"/>
+            <point key="canvasLocation" x="-234" y="-546"/>
         </scene>
         <!--Cross Product Controller-->
         <scene sceneID="uTY-9h-f6M">
@@ -302,6 +307,7 @@
                         <viewLayoutGuide key="safeArea" id="0rX-x3-G7k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="SFM-kd-09I"/>
                     <value key="contentSizeForViewInPopover" type="size" width="360" height="601"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bc-kb-Yi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

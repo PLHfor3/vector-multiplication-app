@@ -13,12 +13,18 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var dotProductView: UIView!
     @IBOutlet weak var crossProductView: UIView!
+    @IBOutlet weak var sigFigSlider: UISlider!
     @IBOutlet weak var sigFigsLabel: UILabel!
+    
+    let dotProductController = DotProductController()
+    
+    var sigFig = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         crossProductView.isHidden = true
         dotProductView.isHidden = false
+        sigFigsLabel.text = "Sig Figs: \(Int(sigFigSlider.value))"
         // Do any additional setup after loading the view.
     }
     
@@ -37,6 +43,21 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func getSliderValue(_ sender: Any) {
+        sigFig = Int(sigFigSlider.value)
+        sigFigsLabel.text = "Sig Figs: \(Int(sigFigSlider.value))"
+        
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+        // Create a variable to store the name the user entered on textField
+            
+        // Create a new variable to store the instance of the SecondViewController
+        // set the variable from the SecondViewController that will receive the data
+        let destinationVC = segue.destination as! CrossProductController
+        destinationVC.sigFigs = sigFig
+    }
     
     
     

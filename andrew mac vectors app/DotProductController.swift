@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class DotProductController: UIViewController {
     
@@ -17,6 +18,10 @@ class DotProductController: UIViewController {
     @IBOutlet weak var ujLabel: UITextField!
     @IBOutlet weak var vjLabel: UITextField!
     @IBOutlet weak var viLabel: UITextField!
+    
+    var testSigFigs = 0
+    
+    var sigFigs: Int = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +55,7 @@ class DotProductController: UIViewController {
     }
     
     @IBAction func dotCalculate(_ sender: Any) {
-        resultLabel.text = String(dotProduct.calculate())
+        resultLabel.text = String(format: "%.\(sigFigs)f", dotProduct.calculate())
     }
     
     
