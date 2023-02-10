@@ -15,9 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var crossProductView: UIView!
     @IBOutlet weak var sigFigSlider: UISlider!
     @IBOutlet weak var sigFigsLabel: UILabel!
-    
-    let dotProductController = DotProductController()
-    
+        
     var sigFig = 0
     
     override func viewDidLoad() {
@@ -46,20 +44,22 @@ class ViewController: UIViewController {
     @IBAction func getSliderValue(_ sender: Any) {
         sigFig = Int(sigFigSlider.value)
         sigFigsLabel.text = "Sig Figs: \(Int(sigFigSlider.value))"
-        
+        self.dotEmbeddedViewController.sigFigs = sigFig
+        self.crossEmbeddedViewController.sigFigs = sigFig
     }
+    
+    private var dotEmbeddedViewController: DotProductController!
+    private var crossEmbeddedViewController: CrossProductController!
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            
-        // Create a variable to store the name the user entered on textField
-            
-        // Create a new variable to store the instance of the SecondViewController
-        // set the variable from the SecondViewController that will receive the data
-        let destinationVC = segue.destination as! CrossProductController
-        destinationVC.sigFigs = sigFig
+        if let vc = segue.destination as? DotProductController,
+                    segue.identifier == "DotProduct" {
+            self.dotEmbeddedViewController = vc
+        }
+        if let vc = segue.destination as? CrossProductController,
+                    segue.identifier == "CrossProduct" {
+            self.crossEmbeddedViewController = vc
+        }
     }
-    
-    
-    
 }
 

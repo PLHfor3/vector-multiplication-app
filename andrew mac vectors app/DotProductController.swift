@@ -10,6 +10,7 @@ import Foundation
 
 class DotProductController: UIViewController {
     
+    
     var dotProduct = DotProduct()
 
     @IBOutlet weak var resultLabel: UILabel!
@@ -18,11 +19,9 @@ class DotProductController: UIViewController {
     @IBOutlet weak var ujLabel: UITextField!
     @IBOutlet weak var vjLabel: UITextField!
     @IBOutlet weak var viLabel: UITextField!
-    
-    var testSigFigs = 0
-    
-    var sigFigs: Int = 2
-    
+        
+    var sigFigs: Int = 5
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

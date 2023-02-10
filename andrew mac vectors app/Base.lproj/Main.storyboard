@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A94-Ve-i75" userLabel="Dot Product View">
-                                <rect key="frame" x="14" y="296" width="398" height="601"/>
+                                <rect key="frame" x="13" y="296" width="398" height="599"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="5zL-DB-dBf" kind="embed" identifier="DotProduct" id="iNw-nd-XaZ"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Mb-Ps-qsq" userLabel="Cross Product View">
-                                <rect key="frame" x="15" y="296" width="399" height="601"/>
+                                <rect key="frame" x="13" y="296" width="400" height="599"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="X0P-0k-uME" kind="embed" identifier="CrossProduct" id="ACK-Di-GFX"/>
@@ -84,7 +84,7 @@
             <objects>
                 <viewController storyboardIdentifier="DotProductController" id="5zL-DB-dBf" customClass="DotProductController" customModule="andrew_mac_vectors_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="60U-iQ-IQh">
-                        <rect key="frame" x="0.0" y="0.0" width="398" height="601"/>
+                        <rect key="frame" x="0.0" y="0.0" width="398" height="599"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="u=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74u-jq-4Pz">
@@ -198,14 +198,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXx-LO-5Vh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-234" y="-546"/>
+            <point key="canvasLocation" x="874" y="33"/>
         </scene>
         <!--Cross Product Controller-->
         <scene sceneID="uTY-9h-f6M">
             <objects>
                 <viewController storyboardIdentifier="CrossProductController" id="X0P-0k-uME" customClass="CrossProductController" customModule="andrew_mac_vectors_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P6z-W8-mmp">
-                        <rect key="frame" x="0.0" y="0.0" width="399" height="601"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="599"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="u=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXH-a8-PIZ">
@@ -249,6 +249,9 @@
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="setUi:" destination="X0P-0k-uME" eventType="editingChanged" id="D1e-gc-M0W"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="uj" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MJs-Oc-wuD">
                                 <rect key="frame" x="136" y="75" width="80" height="34"/>
@@ -256,6 +259,9 @@
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="setUj:" destination="X0P-0k-uME" eventType="editingChanged" id="dzT-rw-IlS"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="uk" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eSx-3R-t1b">
                                 <rect key="frame" x="224" y="75" width="80" height="34"/>
@@ -263,6 +269,9 @@
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="setUk:" destination="X0P-0k-uME" eventType="editingChanged" id="uNO-oV-NHr"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="vi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CHz-Hu-DKS">
                                 <rect key="frame" x="48" y="123" width="80" height="34"/>
@@ -270,6 +279,9 @@
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="setVi:" destination="X0P-0k-uME" eventType="editingChanged" id="Bb3-FI-rDn"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="vj" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="flj-41-kgT">
                                 <rect key="frame" x="136" y="123" width="80" height="34"/>
@@ -277,6 +289,9 @@
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="setVj:" destination="X0P-0k-uME" eventType="editingChanged" id="mBd-rr-cxP"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="vk" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-9d-STa">
                                 <rect key="frame" x="224" y="123" width="80" height="34"/>
@@ -284,6 +299,9 @@
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="setVk:" destination="X0P-0k-uME" eventType="editingChanged" id="uCr-Tk-iPx"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGL-2Q-2hr">
                                 <rect key="frame" x="125" y="164" width="95" height="35"/>
@@ -294,6 +312,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="crossCalculate:" destination="X0P-0k-uME" eventType="touchUpInside" id="1X6-8v-3Mh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-dq-Lb8">
                                 <rect key="frame" x="40" y="207" width="265" height="46"/>
@@ -309,10 +330,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="SFM-kd-09I"/>
                     <value key="contentSizeForViewInPopover" type="size" width="360" height="601"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="uuB-dq-Lb8" id="RGd-KJ-bN4"/>
+                        <outlet property="uiLabel" destination="aiY-Zq-nK8" id="eYt-Vg-uhm"/>
+                        <outlet property="ujLabel" destination="MJs-Oc-wuD" id="LUQ-x6-BaK"/>
+                        <outlet property="ukLabel" destination="eSx-3R-t1b" id="I6p-TY-dqp"/>
+                        <outlet property="viLabel" destination="CHz-Hu-DKS" id="5bs-Sy-7Ha"/>
+                        <outlet property="vjLabel" destination="flj-41-kgT" id="9Nk-Nb-BnJ"/>
+                        <outlet property="vkLabel" destination="QhO-9d-STa" id="aVg-Rn-b5k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bc-kb-Yi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-533.58778625954199" y="122.88732394366198"/>
+            <point key="canvasLocation" x="20" y="649"/>
         </scene>
     </scenes>
     <resources>
