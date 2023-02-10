@@ -9,5 +9,12 @@ import Foundation
 
 class DotProduct
 {
+    var ui: Double = 0
+    var uj: Double = 0
+    var vi: Double = 0
+    var vj: Double = 0
     
+    func calculate () -> Double {
+        return (ui * vi) + (uj * vj)
+    }
 }

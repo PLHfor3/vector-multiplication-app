@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <device id="retina6_72" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,18 +13,18 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="andrew_mac_vectors_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A94-Ve-i75" userLabel="Dot Product View">
-                                <rect key="frame" x="14" y="216" width="361" height="601"/>
+                                <rect key="frame" x="14" y="296" width="398" height="601"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="5zL-DB-dBf" kind="embed" identifier="DotProduct" id="iNw-nd-XaZ"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Mb-Ps-qsq" userLabel="Cross Product View">
-                                <rect key="frame" x="15" y="216" width="362" height="601"/>
+                                <rect key="frame" x="15" y="296" width="399" height="601"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="X0P-0k-uME" kind="embed" identifier="CrossProduct" id="ACK-Di-GFX"/>
@@ -80,7 +80,7 @@
             <objects>
                 <viewController storyboardIdentifier="DotProductController" id="5zL-DB-dBf" customClass="DotProductController" customModule="andrew_mac_vectors_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="60U-iQ-IQh">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="601"/>
+                        <rect key="frame" x="0.0" y="0.0" width="398" height="601"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="u=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74u-jq-4Pz">
@@ -110,6 +110,9 @@
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="setUi:" destination="5zL-DB-dBf" eventType="editingChanged" id="3W1-N3-AWq"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="j" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lM-Ts-SDU">
                                 <rect key="frame" x="239" y="33" width="34" height="21"/>
@@ -124,6 +127,9 @@
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="setVi:" destination="5zL-DB-dBf" eventType="editingChanged" id="UGB-Et-uPm"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="vj" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Th1-a5-FHE">
                                 <rect key="frame" x="193" y="125" width="135" height="34"/>
@@ -131,6 +137,9 @@
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="setVj:" destination="5zL-DB-dBf" eventType="editingChanged" id="koV-iJ-wSs"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="uj" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zFy-WG-LED">
                                 <rect key="frame" x="193" y="78" width="135" height="34"/>
@@ -138,6 +147,9 @@
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="setUj:" destination="5zL-DB-dBf" eventType="editingChanged" id="koZ-CD-MEa"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkO-OW-Tvp">
                                 <rect key="frame" x="48" y="210" width="265" height="46"/>
@@ -162,12 +174,22 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="dotCalculate:" destination="5zL-DB-dBf" eventType="touchUpInside" id="RDq-GD-eKr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Kb-Xq-hhK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="360" height="601"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="ZkO-OW-Tvp" id="7gv-Fw-dpm"/>
+                        <outlet property="uiLabel" destination="X0B-Yq-Ib9" id="Kbq-kQ-L3a"/>
+                        <outlet property="ujLabel" destination="zFy-WG-LED" id="wld-pa-wl3"/>
+                        <outlet property="viLabel" destination="Eqq-4u-Por" id="aJa-Cw-HSO"/>
+                        <outlet property="vjLabel" destination="Th1-a5-FHE" id="mQr-FZ-FRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXx-LO-5Vh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,7 +200,7 @@
             <objects>
                 <viewController storyboardIdentifier="CrossProductController" id="X0P-0k-uME" customClass="CrossProductController" customModule="andrew_mac_vectors_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P6z-W8-mmp">
-                        <rect key="frame" x="0.0" y="0.0" width="362" height="601"/>
+                        <rect key="frame" x="0.0" y="0.0" width="399" height="601"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="u=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXH-a8-PIZ">
@@ -281,9 +303,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="360" height="601"/>
-                    <connections>
-                        <outlet property="resultLabel" destination="uuB-dq-Lb8" id="ryv-gk-38t"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bc-kb-Yi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
